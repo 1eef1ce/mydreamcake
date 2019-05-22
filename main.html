@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="swiper/css/swiper.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="mobile.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md justify-content-center">
+        <div class="container">
+            <a href="/" class="navbar-brand d-flex">
+                <img src="images/logo.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapsingNavbar">
+                <ul class="navbar-nav navbar-center mx-auto align-items-lg-center align-items-start">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Торты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Пирожные</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Макаронс</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сладкий стол</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link align-items-center" href="#"><img src="images/christmas-tree.svg">К рождеству</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link align-items-center" href="#"><img src="images/favorites.svg">Торт на заказ</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right align-items-lg-center align-items-start">
+                    <li class="nav-item d-block d-md-none">
+                        <a class="nav-link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link link-tel" href="#">
+                            +7 (ХХХ) ХХХ ХХ ХХ
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="#">
+                            <img src="images/magnifying-glass.svg">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle caret-off" href="#" role="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/avatar.svg">
+                                <div class="d-inline-block d-md-none">Личный кабинет</div>
+                            </a>
+                            <!--
+                            <div class="dropdown-menu dropdown-menu-right profile" aria-labelledby="profile">
+                                <div class="arrow-up"></div>
+                                <h3>Личный кабинет</h3>
+                                <p>
+                                    В личном кабинете хранятся ваши данные для ускорения процесса заказа. Также в кабинете доступна история ваших заказов.
+                                </p>
+                                <div class="row align-items-center mt-40">
+                                    <div class="col-16 col-lg-12 mx-auto mx-lg-0">
+                                        <button type="submit" class="btn btn-submit-custom">Войти</button>
+                                    </div>
+                                    <div class="col-24 col-lg-12 text-center mt-3 mt-md-0">
+                                        <a href="#"><small>Регистрация</small></a>
+                                    </div>
+                                </div>
+                            </div>-->
+                            <div class="dropdown-menu dropdown-menu-right profile-logged" aria-labelledby="profile">
+                                <div class="arrow-up"></div>
+                                <h3>Личный кабинет</h3>
+                                <ul class="nav flex-column position-relative">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Мои данные</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Смена пароля</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Адрес по умолчанию</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">История заказов</a>
+                                    </li>
+                                </ul>
+                                <a href="#"><small>Выйти</small></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle caret-off" href="#" role="button" id="cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/shopping-bag-m.svg">
+                                <div class="d-inline-block d-md-none">Корзина</div>
+                            </a>
+                            <!--
+                            <div class="dropdown-menu dropdown-menu-right cart text-center" aria-labelledby="cart">
+                                <div class="arrow-up"></div>
+                                <h3>Корзина пока пуста...</h3>
+                                <img src="images/shopping-bag-l.svg">
+                                <p>
+                                    Советуем начать с наших тортиков!
+                                </p>
+                            </div> -->
+                            <div class="dropdown-menu dropdown-menu-right cart" aria-labelledby="cart">
+                                <div class="arrow-up"></div>
+                                <h3>Корзина</h3>
+                                <div class="cart-product d-flex">
+                                    <div class="image">
+                                        <img src="images/item-small.jpg" class="img-fluid">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-between title">
+                                        <h4>Название сладкого  тортика...</h4>
+                                        <div class="catalog-description">1 кг</div>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-between price">
+                                        <div class="trash-icon"></div>
+                                        <div class="catalog-product-price mr-0">2 000 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between totalPrice">
+                                    <div class="text-left">Товаров на сумму</div>
+                                    <div class="text-right">15 000 ₽</div>
+                                </div>
+                                <button class="btn btn-submit-custom">Оформить заказ</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="section-main position-relative">
+    <div class="swiper-container d-none d-md-block">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg" class="img-fluid"></div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <!--
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        -->
+    </div>
+    <div class="bg-main d-block d-md-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-16 mx-auto">
+                    <a href="#" class="btn btn-submit-custom">В магазин</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-main production">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-24 col-xl-5 col-md-7 offset-xl-1 offset-md-0">
+                <h2 class="mb-md-5 mb-0 h1-mob">Мы готовим:</h2>
+                <ul class="nav flex-column position-relative custom-hover d-none d-md-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Торты</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Пирожные</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Макаронс</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сладкий стол</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Наборы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сезонное предложение</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Торты на заказ</a>
+                    </li>
+                </ul>
+                <div class="dropdown d-block d-md-none">
+                    <select class="custom-select">
+                        <option selected>Торты</option>
+                        <option value="1">Пирожные</option>
+                        <option value="2">Макаронс</option>
+                        <option value="3">Сладкий стол</option>
+                        <option value="4">Наборы</option>
+                        <option value="5">Сезонное предложение</option>
+                        <option value="6">Торты на заказ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-24 col-xl-8 col-md-8 offset-xl-1 offset-md-0 no-gutters">
+                <div class="caps d-none d-xl-block">Пирожные</div>
+                <img src="images/2.jpg" class="img-fluid">
+            </div>
+            <div class="col-24 col-xl-6 col-md-8 offset-xl-2 offset-md-1">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <div class="row">
+                    <div class="col-16 col-md-12">
+                        <a href="#" class="btn btn-submit-custom mt-3">Выбрать товар</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-main">
+    <div class="container">
+        <div class="row position-relative align-items-center">
+            <div class="col-24 col-xl-12 col-md-16 block3 bg-dark no-gutters">
+                <div class="innerBlock">
+                    <h1 class="mb-5">История Mydreamcake</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                    </p>
+                </div>
+                <div class="row d-none d-md-flex">
+                    <div class="col-md-6 offset-md-2">
+                        <a href="#" class="btn btn-submit-custom mt-5">Больше о нас</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-16 ml-auto d-none d-md-block">
+                <img src="images/3.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-main">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-24 col-md-12 no-gutters">
+                <img src="images/4.jpg" class="img-fluid">
+            </div>
+            <div class="col-24 col-xl-9 offset-md-2 col-md-10">
+                <h2>Торт на заказ — такой будет только один и только у вас</h2>
+                <p>
+                    Делаем торты для свадебных торжеств, для дней рождения, большие торты и детские тортики...
+                    Одним словом, все, что вам угодно. Если хотите заказть торт, оставьте ваши контакты, мы
+                    позвоним и все обсудим.
+                </p>
+                <form>
+                    <div class="form-group row mt-40">
+                        <div class="col-24 col-xl-8 mr-1col col-md-10">
+                            <input type="text" class="form-control" id="FName" placeholder="Имя">
+                        </div>
+                        <div class="col-24 col-xl-8 col-md-10">
+                            <input type="text" class="form-control" id="Phone" placeholder="+7">
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-40">
+                        <div class="col-16 col-xl-8 col-md-10 mr-1col mx-auto mx-md-0">
+                            <button type="submit" class="btn btn-submit-custom">Перезвоните</button>
+                        </div>
+                        <div class="col-18 col-xl-8 col-md-10 mx-auto mx-md-0 mt-3 mt-md-0">
+                            <div class="small-text text-center text-md-left">
+                                Или свяжитесь с нами по телефону <a href="#">+7 (XXX) XXX XX XX</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-main feedback">
+    <div class="container">
+        <div class="row">
+            <h2 class="mx-auto">За что нас любят</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-1 offset-xl-2 d-none d-xl-block">
+                <div class="caps vertical rotate">Отзывы</div>
+            </div>
+            <div class="col-24 col-xl-12 col-md-16 offset-xl-3 offset-md-1 block4 bg-dark no-gutters">
+                <div class="innerBlock">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Cursus risus at ultrices mi tempus imperdiet. Nibh tellus
+                        molestie nunc non blandit. Pellentesque habitant morbi tristique senectus et. Faucibus vitae
+                        aliquet nec ullamcorper sit amet risus nullam.
+                    </p>
+                    <h3 class="mt-1 mb-0">Иннокентий </h3>
+                    <p>Москва</p>
+                </div>
+                <div class="col-8 col-md-4 nav-buttons no-gutters">
+                    <a href="#" class="w-50 float-left nav-left"></a>
+                    <a href="#" class="w-50 float-right nav-right"></a>
+                </div>
+            </div>
+            <div class="col-md-5 ml-auto block5 bg-gray d-none d-md-block">
+                <div class="innerBlock">
+                    <div class="line-bold w-100"></div>
+                    <div class="line-bold w-75"></div>
+                    <div class="line-bold w-100"></div>
+                    <div class="line-bold w-50"></div>
+                    <h3 class="mt-5 mb-0">Иннокентий </h3>
+                    <p>Москва</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row justify-content-between text-center text-md-left">
+            <div class="col-24 col-xl-4 offset-xl-2 col-md-5">
+                <a class="navbar-brand" href="/">
+                    <img src="images/logo-black.svg">
+                </a>
+                <div class="footer-contacts">
+                    <div><a href="#">+7 (XXX) XXX XX XX</a></div>
+                    <div><a href="mailto:info@mydreamcake.com">info@mydreamcake.com</a></div>
+                    <div>Пн. — Вс.: <span>10:00 — 19:00</span></div>
+                </div>
+                <a href="#" class="link-soc">
+                    <img src="images/instagram.svg">
+                </a>
+                <a href="#" class="link-soc">
+                    <img src="images/facebook.svg">
+                </a>
+                <a href="#" class="link-soc">
+                    <img src="images/vk.svg">
+                </a>
+            </div>
+            <div class="col-24 col-xl-4 col-md-5">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link main-link" href="#">Готовим</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Торты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Пирожные</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Макаронс</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сладкий стол</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Наборы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сезонное предложение</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Торты на заказ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-24 col-xl-4 col-md-5">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link main-link" href="#">Mydreamcake</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Доставка и оплата </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Для мероприятий</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Партнеры</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-24 col-xl-4 col-md-4 payment-options">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link main-link" href="#">принимаем</a>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-6 ml-auto ml-md-0 col-xl-6 col-md-10 text-left">
+                        <img src="images/payment-mastercard.svg">
+                        <img src="images/payment-maestro.svg">
+                        <img src="images/payment-mastercard-secure.svg">
+                        <img src="images/payment-mir.svg">
+                    </div>
+                    <div class="col-6 mr-auto mr-md-0 col-xl-6 col-md-10 text-right">
+                        <img src="images/payment-visa.svg">
+                        <img src="images/payment-visa-electron.svg">
+                        <img src="images/payment-verified-visa.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-24 col-xl-20 mx-auto copyright">
+                <div class="row">
+                    <div class="col-24 col-lg-11 text-md-left text-center">
+                        <div class="mb-4 mb-md-0">
+                            <div class="light d-inline">© 2018, Все права защищены <span>|</span> Разработано в </div>Casta Agency
+                        </div>
+                    </div>
+                    <div class="col-24 col-lg-13 text-lg-right text-md-left text-center">
+                        <a href="#">Политика конфиденциальности</a> <span>|</span>
+                        <a href="#">Пользовательское соглашение</a> <span>|</span>
+                        <a href="#">Публичная оферта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
