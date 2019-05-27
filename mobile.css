@@ -27,6 +27,9 @@
         padding: 12px 0;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
         margin-bottom: 20px;
+		width: 100%;
+		position: fixed;
+		top: 0;
     }
     .navbar-brand img {
         height: 1rem;
@@ -36,6 +39,9 @@
         line-height: 1.4375;
         letter-spacing: normal;
     }
+	.nav-link:focus, .nav-link:hover {
+		color: initial;
+	}
     .navbar-center .nav-item {
         margin: 0;
     }
@@ -211,7 +217,6 @@
         width: 22px;
         height: 22px;
         font-size: 1rem;
-        line-height: 1.45;
         margin-right: 6px;
     }
     .account p {

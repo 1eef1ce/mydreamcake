@@ -513,9 +513,7 @@ ul.nav-pills {
     border-radius: 100%;
     font-weight: 500;
     font-size: 1.125rem;
-    line-height: 1.6;
     color: #212233;
-    text-align: center;
     margin-right: 10px;
 }
 .not-active .round {
@@ -614,6 +612,10 @@ ul.nav-pills {
 }
 .catalog-product {
     margin-bottom: 11.3%;
+	margin-right: 12.5%;
+}
+.catalog-product:nth-of-type(3n) {
+	margin-right: 0;
 }
 .catalog-product h4 {
     height: 2.78em;
@@ -1208,7 +1210,7 @@ button.close {
         font-size: 12px;
     }
 }
-@media (max-width: 1024px) and (min-width: 768px){
+@media (max-width: 992px) and (min-width: 768px){
     .navbar-brand img {
         height: 12px;
     }
@@ -1228,6 +1230,9 @@ button.close {
     .navbar-nav .nav-link {
         font-size: 10px;
     }
+	.catalog-product {
+		margin-right: 6%;
+	}
 }
 @media (max-width: 992px) {
     .btn-submit-custom {
