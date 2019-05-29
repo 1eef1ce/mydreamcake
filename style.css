@@ -768,7 +768,7 @@ ul.nav-pills {
     font-size: 3.5rem;
 }
 .container.position-relative {
-    z-index: 100;
+    z-index: 99;
 }
 .line {
     width: 100%;

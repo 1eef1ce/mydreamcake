@@ -26,11 +26,13 @@
     .navbar {
         padding: 12px 0;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
-        margin-bottom: 20px;
 		width: 100%;
 		position: fixed;
 		top: 0;
     }
+	section:first-of-type {
+		margin-top: 58px;
+	}
     .navbar-brand img {
         height: 1rem;
     }
